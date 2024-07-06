@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="left">
+                <span><i class="ri-close-large-line"></i></span>
+                <h2 class="first">Tic<span class="second">Tac</span><span class="third">Toe</span></h2>
+
+            </div>
+            <div class="right">
+                <a class="home" href="#">Home</a>
+                <a class="record" href="#">Records</a>
+                <i class="ri-menu-2-line menu-bar"></i>
+            </div>
+        </nav>
+        <div class="menu">
+            <a class="home" href="#">Home</a>
+            <a class="record" href="#">Records</a>
+        </div>
+        <div class="container">
+            <div class="info">
+                <h3 class="infoPara">Just <span>Tap</span> on the box to create your sign either <span>'X'</span> or <span>'0'</span>...</h3>
+            </div>
+            <div class="div-box">
+                
+                <div class="left-box">
+                    <div class="winner-box"><h2 class="fill-data"></h2>
+                    <button class="btn">Start Again</button></div>
+                    <div class="game-box">
+                        <div class="row">
+                            <div id="0" class="col"></div>
+                            <div id="1" class="col"></div>
+                            <div id="2" class="col last-col"></div>
+                        </div>
+                        <div class="row">
+                            <div id="3" class="col"></div>
+                            <div id="4" class="col"></div>
+                            <div id="5" class="col last-col"></div>
+                        </div>
+                        <div class="row buttom">
+                            <div id="6" class="col"></div>
+                            <div id="7" class="col"></div>
+                            <div id="8" class="col last-col"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-box">
+                    <img src="./bg-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

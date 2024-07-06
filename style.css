@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 3vw;
+    position: relative;
+}
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left i{
+    color: #ff4500;
+    font-size: 2vw;
+    font-weight: 100;
+}
+.first{
+    color: #ff4500;
+    font-size: 2.5vw;
+    font-weight: 500;
+}
+.second{
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.5vw;
+}
+.third{
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.5vw;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.7vw;
+}
+.right a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+.right i{
+    color: #ff4500;
+    font-size: 1.5vw;
+    font-weight: 500;
+    cursor: pointer;
+    display: none;
+}
+.right .home{
+    color: #ff4500;
+}
+.menu .home{
+    color: #ff4500;
+    margin-top: 8vw;
+}
+.right .record{
+    margin-right: 2vw;
+}
+.menu{
+    width: 100%;
+    height: calc(100% - 70px);
+    background-color: #28292f;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6vw;
+    transform: translate(-100%);
+    transition: all ease-out 0.3s;
+    z-index: 100;
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 6vw;
+    font-weight: 400;
+    border: 1px solid #ff4500;
+    padding: 0.5vw 3vw;
+    border-radius: 25px;
+}
+.menu a:active{
+    background-color: #000;
+}
+/* for hiding blue highlight on tapping in mobile phone  */
+.menu a:active {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+.info{
+    width: 100%;
+    height: 70px;
+    padding: 1vw 3vw;
+}
+.infoPara{
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.infoPara span{
+    color: #ff4500;
+}
+
+.container{
+    width: 100%;
+    height: calc(100% - 70px);
+    background-color: #22242A;
+}
+
+.div-box{
+    width: 100%;
+    height: calc(100% - 70px);;
+    display: flex;
+}
+
+.left-box{
+    width: 50%;
+    height: 100%;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.game-box{
+    width: 70%;
+    height: 80%;
+    border: 25px solid #28292f;
+    border-radius: 20px;
+}
+.row{
+    width: 100%;
+    height: 33%;
+    border-bottom: 5px solid #28292f;
+    display: flex;
+    cursor: pointer;
+}
+.col{
+    width: 33%;
+    height: 100%;
+    border-right: 5px solid #28292f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff4500;
+    font-size: 6vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+.row{
+    -webkit-tap-highlight-color: transparent;
+}
+.last-col{
+    border-right: none;
+}
+.buttom{
+    border-bottom: none;
+}
+.right-box{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.right-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.1;
+}
+
+.winner-box{
+    position: absolute;
+    z-index: 99;
+    top: 30%;
+    left: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.winner-box h2{
+    color: #ff4500;
+    font-size: 4vw;
+}
+
+.btn{
+    padding: 0.5vw 2vw;
+    background-color: #ff4500;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 2vw;
+    font-weight: 600;
+    border-style: none;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media (max-width:500px) {
+    nav{
+        width: 100%;
+        height: 70px;
+        padding: 1vw 3vw;
+    }
+    .left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .left i{
+        color: #ff4500;
+        font-size: 8vw;
+        font-weight: 100;
+    }
+    .first{
+        color: #ff4500;
+        font-size: 9vw;
+        font-weight: 500;
+    }
+    .second{
+        color: #fff;
+        font-weight: 300;
+        font-size: 5vw;
+    }
+    .third{
+        color: #fff;
+        font-weight: 300;
+        font-size: 5vw;
+    }
+    
+    .right a{
+        display: none;
+    }
+    .right i{
+        margin-right: 1.5vw;
+        font-size: 6.5vw;
+        font-weight: 600;
+        display: block;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .info{
+        width: 90%;
+        padding: 4vw;
+    }
+    .infoPara{
+        font-size: 3.7vw;
+        font-weight: 500;
+    }
+    
+    .div-box{
+        flex-direction: column;
+    }
+
+    .left-box{
+        width: 100%;
+        height: 70%;
+    }
+
+    .game-box{
+        width: 98%;
+        height: 100%;
+    }
+    .col{
+        font-size: 15vw;
+    }
+
+    .right-box{
+        width: 100%;
+        height: 30%;
+    }
+
+    .winner-box{
+        top: 40%;
+        left: 17%;
+        
+    }
+    .winner-box h2{
+        font-size: 10vw;
+    }
+    
+    .btn{
+        padding: 2vw 6vw;
+        font-size: 6vw;
+    }
+}
